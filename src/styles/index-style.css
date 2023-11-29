@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+/*
+  VARIABLES DECLARATION ON ROOT
+*/
+:root {
+    --green: rgb(33, 250, 131);
+    --red: rgb(252, 86, 108);
+    --dusky-green: rgb(6, 170, 94);
+    --opac-white: rgba(255, 255, 255, .8);
+    --form-txt:  rgba(255, 255, 255, .5);
+    --darky: #1d2b3a;
+    --light-grey: rgb(105, 105, 105);
+}
+
+/*
+    COMMON STYLING
+*/
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background-color:#fff;
+    color: #000;
+}
+ 
+/* Navbar */ 
+
+.container{
+    background-image: linear-gradient(to left top,
+    rgba(255, 255, 255,0.3),
+    rgba(255, 255, 255,0.4),
+    rgba(255, 255, 255,0.2),
+    #54e18b),url('../../Media_1/backdaround_image.jpg');
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+}
+.navbar{
+    background-color: #1d2b3a;
+    height:16vh;
+    background-color: rgba(0, 0, 255,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+}
+.logo img{
+    height:75px;
+    width:75px;
+    padding:15px 0 10px 40px;
+}
+.navbar-item{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.navbar-item .navbar-item-sub a{
+    font-family:'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-decoration:none;
+    color: #fff;
+    padding: 15px;
+    margin-right: 15px;
+}
+.navbar-item .navbar-item-sub a:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+}
+.navbar-item button{
+    font-size: 1em;
+    color: #fff;
+    padding: 8px 22px;
+    background:rgba(0, 0, 255,0.5);
+    transition: all 0.2s ease;
+    margin: 0 15px;
+}
+.navbar-item button:hover{
+    color: #1778f2;
+    background-color: #fff;
+    box-shadow:5px 10px 5px black;
+}
+.p-first-text{
+    display: flex;
+    font-size: 3.5rem;
+    color: rgba(0, 0, 0,0.7);
+    font-weight: 600;
+    padding: 50px 120px 7px 60px;
+}
+.p-second-text{
+    display: flex;
+    justify-content: start;
+    font-size: 3.5rem;
+    color:rgba(0, 0, 0,0.7);
+    font-weight: 600;
+    padding-left: 60px;
+}
+/* Top Boarder Navbar */
+.someinfo{
+    width: 100%;
+    height:6vh;
+    background-image: linear-gradient(to left top,
+        rgba(255, 255, 255,0.75),
+        rgba(0, 0, 255,0.75),
+        rgba(255, 255, 255,0.7),
+        rgba(110, 214, 252,0.5),
+        rgba(0, 146, 204,0.7));
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.someinfo-item a{
+    text-decoration: none;
+    padding-left:40px;
+    color: #1d2b3a;
+}
+.social-media-icon{
+    display: flex;
+    margin:0 20px;
+}
+.social-media-icon a{
+    text-decoration: none;
+    margin-right:20px;
+    color: #fff;
+    cursor: pointer;
+    font-size:1.34rem;
+}
+.social-media-icon .instagram-logo{
+    background-color:#dc3e6e;
+    padding:1.79px 1.89px;
+    border-radius:5px;
+}
+.social-media-icon .facebook-logo{
+    background-color:#1778f2;
+    padding:1.89px 1.89px;
+    border-radius:50%;
+}
+.social-media-icon .youtube-logo{
+    background-color:#ff0000;
+    padding:1.59px 2px;
+    border-radius:6px;
+}
+.social-media-icon .twitter-logo{
+    background-color:#1778f2;
+    padding:1.79px 1.89px;
+    border-radius:5px;
+}
+/* welcome */
+.welcome{
+    margin-top: 40px;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    overflow: hidden;
+}
+.welcome-text p{
+    padding:10px 80px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+.welcome-text h3{
+    font-size: 1.45rem;
+    margin:30px 80px 0 80px;
+}
+.welcome-text a{
+    margin-bottom: 100px;
+    padding:10px 80px;
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.welcome h2{
+    color:  #1778f2;
+    margin-bottom: 10px;
+    display: block;
+    flex-direction: row;
+    font-weight: 200;
+    font-size: 3rem;
+    padding: 20px 5px 10px 60px;
+}
+.welcome-sub-2{
+    display: flex;
+    flex-direction: row;
+}
+.welcome-sub-1 h2{
+    margin-top: 60px;
+}
+.welcome .welcome-text{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.welcome .image{
+    display: flex;
+    flex-direction: row;
+    height:70vh;
+    width: 60%;
+}
+
+/* count-student */
+
+
+.student-count-background{
+    margin-top: 40px;
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(to left top,
+    rgba(255, 255, 255,0.5),
+    rgba(255, 255, 255,0.5),
+    rgba(255, 255, 255,0.5)),url(../../Media_1/slide_5.jpg);
+}
+.student-count{
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+}
+
+.student-count-item img{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.student-count-item{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+    padding:5px 40px;
+    margin-top: 110px;
+}
+.student-count-item h2{
+    display: flex;
+    padding-left:30px;
+    padding-right:30px;
+    font-size:3rem;
+    transition: all 3s linear;
+}
+.student-item-text p{
+    font-family:'Raleway', sans-serif;
+    padding-left:80px;
+    font-size: 1.2rem;
+}
+
+                                /* Our Featured Courses  */
+.courses{
+    margin-top: 40px;
+    height: 90vh;
+    width: 100%;
+}
+.courses-box-2{
+    margin-top:30px;
+    height: 80vh;
+    width: 100%;
+}
+.courses-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.courses-text h2{
+    font-size: 2rem;
+    color: #1778f2;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.courses-text p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 260px;
+}
+.courses-box{
+    height:60vh;
+    display: flex;
+}
+
+.courses-box-sub{
+    height: 50vh;
+    width:46vw;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding:20px 30px;
+    display: flex;
+}
+.courses-box-sub-img img{
+    height:53vh;
+    width: 20vw;
+}
+.courses-box-sub-text{
+    margin-left: 20px;
+    padding-right: 40px;
+}
+.enroll{
+    margin-top: 10px;
+    background-color: #6394f7;
+    border: 0.05rem solid #000;
+    padding: 10px 20px;
+    width:8vw;
+    border-radius: 40px;
+}
+.enroll:hover{
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #000;
+}
+.enroll a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.enrolled{
+    margin-top: 10px;
+}
+
+
+
+
+
+                              /* Meet Our Qualified Teachers */
+
+.teacher{
+    margin-top: 60px;
+    height:60vh;
+    width: 100%;
+}
+.teacher-text{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.teacher-text p{
+    margin-top: 10px;
+}
+.teacher-text h2{
+    color: #1778f2;
+    font-size: 2rem;
+    margin-top: 25px;
+}
+.teacher-card-sub{
+    width: 20vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.001rem solid rgba(0, 0, 0,0.2);
+    margin:20px 5px 5px 10px;
+    padding: 0 20px;
+    border-radius:5px;
+}
+.teacher-card-sub i{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.teacher-card-sub:hover{
+    transition: all 1s linear;
+    box-shadow: 5px 10px 5px #000;
+    z-index: 1;
+}
+.teacher-card-sub img{
+    height:6rem;
+    width:6rem;
+    border-radius: 50%;
+}
+.teacher-card{
+    padding: 20px 40px 0 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.instagram-logo{
+    background-color:#dc3e6e;
+    padding:1.79px 1.89px;
+    border-radius:5px;
+}
+.facebook-logo{
+    background-color:#1778f2;
+    padding:1.89px 1.89px;
+    border-radius:50%;
+}
+.youtube-logo{
+    background-color:#ff0000;
+    padding:1.59px 2px;
+    border-radius:6px;
+}
+.twitter-logo{
+    background-color:#1778f2;
+    padding:1.79px 1.89px;
+    border-radius:5px;
+}
+
+                             /* Why Choose Enlight School */
+
+.choose{
+    margin-top: 50px;
+    padding: 20px 80px;
+    height: 120vh;
+}
+.choose  h3{
+    font-weight:500;
+    word-spacing:0.03rem;
+    letter-spacing:0.02rem;
+    font-size:1.5rem;
+}
+.choose-text h3{
+    color: #1778f2;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.choose  p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    opacity: 0.5;
+}
+.choose-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.choose-text>p{
+    padding: 10px 70px 5px 70px;
+}
+.choose-sub-1{
+    margin-top: 20px;
+    display: flex;
+}
+.choose-sub-1>p{
+    padding: 10px 20px 10px 20px;
+}
+.choose-sub-1-item-1{
+    margin-right: 60px;
+}
+
+
+
+
+
+
+                      /* Admission */
+.Admission{
+    margin-top: 50px;
+    height: 20vh;
+    background-color: rgb(23, 122, 242);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.Admission-sub-1{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+}
+.Admission-sub-2{
+    border: 0.034rem solid #fff;
+    padding: 10px 20px;
+    font-size: 1.35rem;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #1778f2;
+}
+.Admission-sub-2:hover{
+    border: 0.034rem solid #000;
+    color:#1778f2;
+    background-color:#fff;
+    cursor: pointer;
+}
+
+
+                       /* footer */
+
+footer{
+    background-image:
+            linear-gradient(to left top, 
+              rgba(21, 27, 19, 0.75), 
+              rgba(0, 0, 0, 0.5));
+    height: 66vh;
+    color: #fff;
+}
+.first-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 10px 40px 10px 40px;
+    background-color:rgba(0, 0, 0, 0.57);
+}
+.first-block i{
+    align-items: center;
+    padding:5px 5px 0 10px;
+    cursor: pointer;
+}
+.first-block>div>h4{
+    line-height:40px;
+    letter-spacing: 1px;
+}
+.first-block >div >ul>a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    opacity:0.5;
+}
+.second-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2px;
+    height: 8vh;
+    background-color:rgba(255, 0, 0,0.7);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+}
+.third-block{
+    background-color: rgba(0, 0, 0, 0.57);
+    margin-top: 2px;
+}
+.third-block >p{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color:#fff;
+}
+.third-block >p >a{
+    color: #ff0000;
+    text-decoration: none;
+}
+
+
+/* Resposive */
+
+@media only screen and (max-width: 1024px )and (min-width: 992px) {
+    .container {
+        width:100%;
+        height:60vh;
+        background-size: cover;
+    }
+    .someinfo{
+        height:3vh;
+    }
+    .navbar{
+        height: 6vh;
+    }
+
+    .student-count-background{
+        height:30vh;
+    }
+    .student-count-item{
+        padding-right:20px;
+    }
+    .courses{
+        height:160vh;
+    }
+    .courses-box{
+        flex-direction: column;
+    }
+    .courses-box-sub{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .courses-box-sub-img img{
+        width: 90vw;
+    }
+    .welcome .image img{
+        height:70vh;
+        width:100vw;
+    }
+    .welcome-text h3{
+        margin-top:10rem;
+    }
+    .courses-box-sub-text{
+        margin-top: 40px;
+    }
+    .courses-box-2{
+        height:151vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .teacher{
+        height:30vh;
+    }
+    .teacher-text{
+        padding-left:30px;
+    }
+    .teacher-card-sub{
+        height: 20vh;
+    }
+    .choose{
+        height:60vh;
+    }
+    .Admission{
+        height: 10vh;
+    }
+    footer{
+        height:auto;
+    }
+
+}
+
+/* Media query for smaller devices like phones */
+
+@media only screen and (max-width: 768px) and (min-width: 600px){
+    .container {
+        width:100%;
+        height:90vh;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .someinfo{
+        height:4vh;
+        width: auto;
+    }
+    .youtube-logo{
+        visibility: hidden;
+    }
+    .email{
+        visibility: hidden;
+    }
+    .social-media-icon{
+        padding-top:30px;
+    }
+    .someinfo-item{
+        flex-direction: row;
+        padding-top: 30px;
+    }
+    .navbar{
+        height:8vh;
+    }
+    .welcome{
+        height:111vh;
+        margin-top: 20px;
+    }
+    .welcome-sub-1 h2{
+        margin-top:90px;
+    }
+    .welcome-text h3{
+        margin-top: 60px;
+    }
+    .welcome .image img{
+        margin-top: -70px;
+        height:60vh;
+        width:85vw;
+        padding-left:65px;
+    }
+    .welcome-sub-2{
+        flex-direction: column;
+    }
+    .student-count-background{
+        margin-top:10px;
+        width: 100%;
+        height: 30vh;
+    }
+    .student-count{
+        display: flex;
+        justify-content:space-between;
+        overflow: hidden;
+    }
+    .student-count-item img{
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+    }
+    .student-count-item{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items: center;
+        padding:5px 40px;
+        margin-top: 110px;
+    }
+    .student-count-item h2{
+        display: flex;
+        padding-left:30px;
+        padding-right:30px;
+        font-size:1.68rem;
+        transition: all 3s linear;
+    }
+    .student-item-text p{
+        font-family:'Raleway', sans-serif;
+        padding-left:80px;
+        font-size: 1rem;
+    }
+    .courses{
+        height:190vh;
+    }
+    .courses-text p{
+        font-family:'Raleway', sans-serif;
+        font-size: 1.2rem;
+        padding: 5px 60px;
+    }
+    .courses-box{
+        flex-direction: column;
+    }
+    .courses-box-sub{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .courses-box-sub-img img{
+        width: 90vw;
+    }
+    .courses-box-sub-text{
+        margin-top: 40px;
+    }
+    .courses-box-sub-text p{
+        margin-top: 10px;
+    }
+    .enroll{
+        margin-top: 10px;
+        padding:2px 30px;
+        width:8vw;
+        border-radius: 40px;
+    }
+    .courses-box-2{
+        height:181vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .teacher{
+        height:37vh;
+    }
+    .teacher-text{
+        padding-left:30px;
+        padding-right: 20px;
+    }
+    .teacher-card-sub{
+        height:25vh;
+        width:30vw;
+    }
+    .teacher-card-sub h2{
+        font-size: 1.2rem;
+    }
+    .teacher-card-sub img{
+        height:4rem;
+        width:4rem;
+        border-radius: 50%;
+    }
+    .teacher-card-sub i{
+        margin-top:5px;
+        margin-left:5px;
+    }
+    .choose{
+        height:109vh;
+    }
+    .choose-text p{
+        padding-left:40px;
+        padding-right:30px;
+    }
+    .Admission{
+        height: 10vh;
+    }
+    .logo-social-media-icons{
+        visibility: hidden;
+    }
+    footer{
+        height:auto;
+    }
+}
